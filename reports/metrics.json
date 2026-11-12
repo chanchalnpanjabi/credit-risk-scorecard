@@ -1,0 +1,68 @@
+{
+  "data": "Give Me Some Credit (Kaggle)",
+  "n_train": 104999,
+  "n_test": 45000,
+  "default_rate": 0.06684044560297069,
+  "cleaning": {
+    "rows_in": 150000,
+    "dropped_invalid_target_or_age": 1,
+    "delinquency_special_codes_set_to_nan": 807,
+    "rows_out": 149999,
+    "default_rate": 0.06684044560297069
+  },
+  "features_used": [
+    "RevolvingUtilizationOfUnsecuredLines",
+    "NumberOfTimes90DaysLate",
+    "NumberOfTime30-59DaysPastDueNotWorse",
+    "NumberOfTime60-89DaysPastDueNotWorse",
+    "age",
+    "MonthlyIncome",
+    "NumberOfDependents"
+  ],
+  "train": {
+    "auc": 0.8522146448566288,
+    "ks": 0.5474673847366474,
+    "gini": 0.7044292897132576
+  },
+  "test": {
+    "auc": 0.8525833378090255,
+    "ks": 0.5539401121996894,
+    "gini": 0.705166675618051,
+    "auc_ci95": [
+      0.8452448957923759,
+      0.8600055868412527
+    ],
+    "brier": 0.05056016723105298
+  },
+  "points_scorecard_test": {
+    "auc": 0.8523114197220444,
+    "ks": 0.5518806393720385
+  },
+  "score_range_test": [
+    415.0,
+    619.0
+  ],
+  "calibration_mean_pd_vs_actual": [
+    0.06687815127881697,
+    0.06684444444444444
+  ],
+  "scaling": {
+    "base_score": 600,
+    "base_odds": 50,
+    "pdo": 20
+  },
+  "psi_score_train_vs_test": 0.00027801475111144684,
+  "psi_features_train_vs_test": {
+    "RevolvingUtilizationOfUnsecuredLines": 0.0003523524523891558,
+    "NumberOfTimes90DaysLate": 0.00011809360502231259,
+    "NumberOfTime30-59DaysPastDueNotWorse": 7.942501747333999e-05,
+    "NumberOfTime60-89DaysPastDueNotWorse": 3.8950339239646524e-05,
+    "age": 7.140994559847355e-05,
+    "MonthlyIncome": 8.280826225511573e-05,
+    "NumberOfDependents": 6.716128881290723e-05
+  },
+  "benchmark": {
+    "model": "XGBoost",
+    "test_auc": 0.8674147548494546
+  }
+}

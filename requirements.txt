@@ -1,0 +1,9 @@
+pandas>=2.0
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+matplotlib>=3.8
+xgboost>=2.0        # optional: used for the benchmark when installed, else scikit-learn's HistGradientBoosting
+jupyter
+tabulate            # optional: nicer markdown tables in reports/results.md
+pytest

@@ -1,0 +1,11 @@
+feature,iv,strength
+RevolvingUtilizationOfUnsecuredLines,1.11697668260711,suspiciously strong
+NumberOfTimes90DaysLate,0.851676657148901,suspiciously strong
+NumberOfTime30-59DaysPastDueNotWorse,0.7385042924106754,suspiciously strong
+NumberOfTime60-89DaysPastDueNotWorse,0.5769675221685938,suspiciously strong
+age,0.2391245850694068,medium
+NumberOfOpenCreditLinesAndLoans,0.09092603780932354,weak
+MonthlyIncome,0.0658196092007543,weak
+NumberRealEstateLoansOrLines,0.03851786171688369,weak
+NumberOfDependents,0.036009531951654176,weak
+DebtRatio,0.01923462793887247,useless
